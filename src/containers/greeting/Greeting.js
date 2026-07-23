@@ -2,16 +2,12 @@ import React, {useContext} from "react";
 import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import { TypeAnimation } from "react-type-animation";
+import {TypeAnimation} from "react-type-animation";
 // import landingPerson from "../../assets/lottie/landingPerson";
 // import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import {
-  illustration,
-  greeting,
-  socialMediaLinks
-} from "../../portfolio";
+import {illustration, greeting, socialMediaLinks} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
@@ -29,7 +25,7 @@ export default function Greeting() {
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
                 {" "}
-               <>
+                <>
                   {greeting.title}
                   <br />
                   <span className="my-name">{greeting.username}</span>
@@ -37,56 +33,56 @@ export default function Greeting() {
                 </>
               </h1>
               <p
-                  className={
-                    isDark
-                      ? "dark-mode greeting-text-p"
-                      : "greeting-text-p subTitle"
-                  }
-                >
-                  {greeting.subTitle}
-                </p>
+                className={
+                  isDark
+                    ? "dark-mode greeting-text-p"
+                    : "greeting-text-p subTitle"
+                }
+              >
+                {greeting.subTitle}
+              </p>
 
-                <TypeAnimation
-                  sequence={[
-                    "☕ Java Developer",
-                    2000,
-                    "🚀 Backend Enthusiast",
-                    2000,
-                    "🌱 Spring Boot Learner",
-                    2000,
-                    "💼 Open to Opportunities",
-                    2000
-                  ]}
-                  wrapper="div"
-                  speed={50}
-                  repeat={Infinity}
-                  className="typing-text"
-                />
+              <TypeAnimation
+                sequence={[
+                  "☕ Java Developer",
+                  2000,
+                  "🚀 Backend Enthusiast",
+                  2000,
+                  "🌱 Spring Boot Learner",
+                  2000,
+                  "💼 Open to Opportunities",
+                  2000
+                ]}
+                wrapper="div"
+                speed={50}
+                repeat={Infinity}
+                className="typing-text"
+              />
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
-             <div className="button-greeting-div">
-  <Button text="📧 Contact" href="#contact" />
+              <div className="button-greeting-div">
+                <Button text="📧 Contact" href="#contact" />
 
-  {greeting.resumeLink && (
-    <a
-      href={greeting.resumeLink}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="download-link-button"
-    >
-      <Button text="📄 Resume" />
-    </a>
-  )}
+                {greeting.resumeLink && (
+                  <a
+                    href={greeting.resumeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="download-link-button"
+                  >
+                    <Button text="📄 Resume" />
+                  </a>
+                )}
 
-  <a
-    href={socialMediaLinks.github}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="download-link-button"
-  >
-    <Button text="💻 GitHub" />
-  </a>
-</div>
+                <a
+                  href={socialMediaLinks.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="download-link-button"
+                >
+                  <Button text="💻 GitHub" />
+                </a>
+              </div>
             </div>
           </div>
           <div className="greeting-image-div">

@@ -21,7 +21,7 @@ const illustration = {
 
 const greeting = {
   title: "Hello, I'm",
-username: "Ashutosh Mallik",
+  username: "Ashutosh Mallik",
   subTitle: emoji(
     "A passionate Java Developer 🚀 with a strong foundation in Core Java, Object-Oriented Programming, JDBC, Collections Framework, SQL, Exception Handling and Multithreading. I enjoy building real-world Java applications and continuously learning backend technologies."
   ),
@@ -43,44 +43,48 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I Do",
   subTitle:
-  "JAVA DEVELOPER PASSIONATE ABOUT BUILDING CLEAN, SCALABLE AND OBJECT-ORIENTED APPLICATIONS",
+    "JAVA DEVELOPER PASSIONATE ABOUT BUILDING CLEAN, SCALABLE AND OBJECT-ORIENTED APPLICATIONS",
   skills: [
-  emoji("⚡ Develop Java console and desktop applications using Object-Oriented Programming."),
-  emoji("⚡ Build database-driven applications using JDBC and MySQL."),
-  emoji("⚡ Strong understanding of Collections Framework, Exception Handling and Multithreading."),
-  emoji("⚡ Currently learning Spring Boot and modern backend development.")
-],
+    emoji(
+      "⚡ Develop Java console and desktop applications using Object-Oriented Programming."
+    ),
+    emoji("⚡ Build database-driven applications using JDBC and MySQL."),
+    emoji(
+      "⚡ Strong understanding of Collections Framework, Exception Handling and Multithreading."
+    ),
+    emoji("⚡ Currently learning Spring Boot and modern backend development.")
+  ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-  {
-    skillName: "Java",
-    fontAwesomeClassname: "fab fa-java"
-  },
- 
-  {
-    skillName: "MySQL",
-    fontAwesomeClassname: "fas fa-database"
-  },
-  {
-    skillName: "Git",
-    fontAwesomeClassname: "fab fa-git-alt"
-  },
-  {
-    skillName: "GitHub",
-    fontAwesomeClassname: "fab fa-github"
-  },
-  {
-    skillName: "VS Code",
-    fontAwesomeClassname: "fas fa-code"
-  },
-  {
-    skillName: "IntelliJ IDEA",
-    fontAwesomeClassname: "fas fa-laptop-code"
-  }
-],
+    {
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+
+    {
+      skillName: "MySQL",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
+    },
+    {
+      skillName: "GitHub",
+      fontAwesomeClassname: "fab fa-github"
+    },
+    {
+      skillName: "VS Code",
+      fontAwesomeClassname: "fas fa-code"
+    },
+    {
+      skillName: "IntelliJ IDEA",
+      fontAwesomeClassname: "fas fa-laptop-code"
+    }
+  ],
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -90,19 +94,19 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Gandhi Institute for Technological Advancement (GITA), Bhubaneswar",
+      schoolName:
+        "Gandhi Institute for Technological Advancement (GITA), Bhubaneswar",
       logo: require("./assets/images/gitaLogo.png"),
       subHeader: "Master of Computer Applications (MCA)",
       duration: "September 2024 - July 2026",
-      desc: "Focused on Java, Object-Oriented Programming, Database Management Systems, Software Engineering, and Full-Stack Development.",
-      
+      desc: "Focused on Java, Object-Oriented Programming, Database Management Systems, Software Engineering, and Full-Stack Development."
     },
     {
       schoolName: "Brundaban +3 Science Residential College",
       logo: require("./assets/images/brundabanLogo.png"),
       subHeader: "Bachelor of Science in Computer Science",
       duration: "May 2021 - April 2024",
-      desc: "Graduated with 81.80%, building a strong foundation in computer science and programming.",
+      desc: "Graduated with 81.80%, building a strong foundation in computer science and programming."
     }
   ]
 };
@@ -111,28 +115,28 @@ const educationInfo = {
 
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience:[
-{
-Stack:"Core Java",
-progressPercentage:"90%"
-},
-{
-Stack:"JDBC & MySQL",
-progressPercentage:"85%"
-},
-{
-Stack:"Object-Oriented Programming",
-progressPercentage:"90%"
-},
-{
-Stack:"Collections Framework",
-progressPercentage:"80%"
-},
-{
-Stack:"GitHub",
-progressPercentage:"75%"
-}
-],
+  experience: [
+    {
+      Stack: "Core Java",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "JDBC & MySQL",
+      progressPercentage: "85%"
+    },
+    {
+      Stack: "Object-Oriented Programming",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "Collections Framework",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "GitHub",
+      progressPercentage: "75%"
+    }
+  ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
@@ -146,8 +150,7 @@ const workExperiences = {
       company: "Cognifyz Technologies",
       companylogo: require("./assets/images/cognifyzlogo.png"),
       date: "2024",
-      desc:
-        "Developed Java applications using Object-Oriented Programming principles and gained practical experience in building console-based applications.",
+      desc: "Developed Java applications using Object-Oriented Programming principles and gained practical experience in building console-based applications.",
       descBullets: [
         "Developed Java applications using inheritance, polymorphism, abstraction and encapsulation.",
         "Built multiple Java console projects to strengthen Core Java concepts.",
@@ -332,5 +335,3 @@ export {
   isHireable,
   resumeSection
 };
-
-
